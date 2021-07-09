@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1579547621700-03c2c337370a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+
+.container{
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px;   
+}
+
+.title{
+    margin: 0;
+}
+
+.subtitle{
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header{
+    background-color: rgba(38, 134, 172,0.5);
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.header input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+
+}
+
+.header input:focus{
+    outline: royalblue;
+    box-shadow: 2px 2px 10px rgba(234, 236, 238, 0.4);
+}
+
+.header input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-list{
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    color: rgb(0, 24, 54);
+}
+
+.user-list::-webkit-scrollbar {
+  width: 12px;               
+}
+.user-list::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        
+}
+.user-list::-webkit-scrollbar-thumb {
+  background-color: #fff;  
+  border-radius: 20px;       
+  border: 2px solid rgb(38, 134, 172);; 
+}
+
+.user-list li {
+    display: flex;
+    padding: 15px;
+    border-radius: 50px;
+    transition: background .5s;
+}
+
+.user-list li:hover{
+    color: darkblue;
+    background: rgb(191, 219, 230);
+}
+
+.user-list img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.user-list .user-info{
+    margin-left: 10px;    
+}
+
+.user-list .user-info h4{
+    margin: 0 0 10px;
+}
+
+.user-list .user-info p{
+    font-size: 12px;
+}
+
+.user-list span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.user-list li:not(:last-of-type){
+    border-bottom: 0px solid rgb(235, 233, 233);
+} */
+
+.user-list li.hide{
+    display: none;
+}
