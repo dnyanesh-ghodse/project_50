@@ -105,15 +105,21 @@ body{
 }
 
 .user-list .user-info{
-    margin-left: 10px;    
+    margin-left: 15px;    
 }
 
 .user-list .user-info h4{
-    margin: 0 0 10px;
+    margin: 0 0 1px;
+    color: cadetblue;
+}
+
+.user-list .user-info h5{
+    color: darkslateblue;
 }
 
 .user-list .user-info p{
     font-size: 12px;
+    color: darkcyan ;
 }
 
 .user-list span{
